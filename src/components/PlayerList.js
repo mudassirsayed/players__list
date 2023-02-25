@@ -45,7 +45,7 @@ function PlayerList() {
       <div className="row mt-3">
         {filteredData && filteredData?.length > 0
           ? filteredData?.map((player) => {
-              return <PlayersCard player={player} />;
+              return <PlayersCard player={player} key={player.Id} />;
             })
           : !isLoading && (
               <h1 className="d-flex justify-content-center align-items-center text-danger">
