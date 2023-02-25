@@ -7,7 +7,7 @@ function PlayersCard({ player }) {
         <div className="card mt-3">
           <img
             className="card-img-top"
-            src={`../../player-images/${player.Id}.JPG`}
+            src={`../../player-images/${player.Id}.jpg`}
             onError={(e) => {
               e.target.src =
                 "https://via.placeholder.com/500x500?text=Football";
